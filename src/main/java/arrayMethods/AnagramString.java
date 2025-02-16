@@ -16,6 +16,8 @@ import java.util.Scanner;
 public class AnagramString {
 	
 	void isStringAnagram(String input1, String input2) {
+		input1 = input1.toLowerCase();
+		input2 = input2.toLowerCase();
 		char[] arr1 = input1.toCharArray();
 		char[] arr2 = input2.toCharArray();
 		Arrays.sort(arr1);
