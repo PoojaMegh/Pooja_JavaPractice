@@ -1,0 +1,27 @@
+Real-time Test Manager/Lead Interview Questions:
+Question 1. As a Test Manager, how do you divide your time into Various Tasks?
+Question 2. How do you do test estimation of a story from a testing perspective? What are the different factors that you will consider during test estimation?
+Question 3. What will be your approach when a customer reports 2 or 3 critical bugs after release?
+Question 4. What would be your approach when it is 7 days since the client reports the bugs?
+How will you be able to restore the client's confidence and make sure that these things won't happen again in the future?
+Question 5. What will be your approach if the client requirement is changing very frequently?
+Question 6. What are the different factors/parameters you will consider when you review the test cases written by your team members?
+Question 7. If your team member is not giving the output as expected then what will be your approach to handle this?
+Question 8. What kind of work you have done in your organization and how you manage that?
+Question 9. Which approach is best according to you TDD or BDD and Why?
+Question 10. What is the process that you follow for deliveries? What is the path to production? After every sprint you go to production or any release cycle is there?
+Question 11. What different sprint ceremonies do you guys perform?
+Question 12. What different activities do you perform when sprint, starting ongoing and when finish?
+Question 13. How is the planning for testing in a sprint?
+Question 14. What will be your approach if the person who is working on the most critical task is not available for 1 week?
+Question 15. Do you create any QA Plan during the sprint and what do you write under it?
+Question 16. What would be your approach if the story is not delivered on time? What are the different steps you take?
+Question 17. Have you created any site plans?
+Question 18. How do you plan manual and automation testing in a Sprint?
+Question 19. Do you do a manual test first and then automation or do both in ||ll?
+Question 20. If the client requirement is that you need to do all automation in the same sprint then what would be your approach?
+Question 21. Is it possible to test the story by automation only.? How we will work on it? What are the requirements to fill this thing?
+Question 22. What kind of report that you share when you deliver?
+Question 23. How do you share the performance of the QA team? What are the things that you add to this performance report?
+Question 24. What are the different defect leakages that you faced till now?
+Question 25. How do you do QA estimation for the new requirement? How do you calculate how much testing is required? What factors are there to set this?
