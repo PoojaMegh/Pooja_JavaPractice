@@ -1,0 +1,39 @@
+Mphasis Interview Questions for hashtag#QA role (6+ yrs)
+Round1:
+--------------
+1) complete framework explanation and it's tools
+2) framework code for login
+3) code to read data from Excel and that should get sent to UI i.e., for un, PW fields
+4) String a= ""I Love Java""
+O/p Java Love I
+5) String a= ""I Love Java""
+O/p avaJ evoL I
+6) String a = ""abc-2019""
+O/p
+[abc]
+[2019]
+7) Practical usage of StringBuffer
+
+Round 2:
+--------------
+1) String name = ""Madhu"";
+name.toUpperCase();
+Syso(""name"");
+O/P?
+2) Explain TestNG in detail
+3) key= fruit, value = ""apple"";
+key= fruit, value = ""mango"";
+Using any Collection how to print the values
+Ans - Use MultiMaps
+4) There are @Test1 and @Test2 methods in TestNG, but there are methods in Test1 which gets executed only if Test2 gets executed..So how to approach?
+5) How to rerun failed TestCases?
+6) Explain how do you approach Testing process if you are in day 1 of the sprint
+7) Explain which priority Test Suites you run in Automation,i.e., do you run all P1,P2,P3 siutes
+8) Explain the priorities of the Locators you applied in your project, how do you decide
+9) Explain Regression Testing w.r.t Manual and Automation testing, what is the Approach
+10) Explain smoke VS Sanity in detail
+11) throw Vs throws
+12) finally importance
+13) what is finalize
+14) why final is needed
+15) why Jenkins and Maven
