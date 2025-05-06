@@ -1,3 +1,9 @@
+/*a. create a method to return first occurrence of given character from given string.
+b. create a method to return last occurrence of given character from given string.
+c. create a method to return true if given character is found from given string else
+	return false and print return value in main method.
+*/
+
 package javaProgramPractice.pooja;
 
 public class Assignment18_Program_3 {

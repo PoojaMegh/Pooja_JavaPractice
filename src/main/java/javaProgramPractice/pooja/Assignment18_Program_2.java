@@ -1,3 +1,8 @@
+/*Print all characters at an even position from the given string.
+input : technocredits
+output : ehordt
+ */
+
 package javaProgramPractice.pooja;
 
 public class Assignment18_Program_2 {

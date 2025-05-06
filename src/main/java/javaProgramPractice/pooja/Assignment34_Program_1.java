@@ -12,31 +12,29 @@ NOTE : write a code in main method.
 */
 package javaProgramPractice.pooja;
 
-import java.util.Arrays;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 
 public class Assignment34_Program_1 {
 
 	public static void main(String[] args) {
-		int count = 0;
-		int[] input = new int [3];		
-		while(count < 3)			
-		{
-			 try 
-			 {
-				System.out.println("Enter a number: ");
-				Scanner scanner = new Scanner(System.in);
-				input[count]= scanner.nextInt();	
-				scanner.close();
-				count++;								
-			}
+		List<Integer> input = new ArrayList<>();
 
-			catch(InputMismatchException ie)
+		Scanner scanner = new Scanner(System.in);
+		while(input.size() < 3)
+		{
+			System.out.println("Enter a number: ");
+			String str = scanner.nextLine();
+			try
 			{
-				System.out.println("Given input is not a number.");				
-			}	
+				int num = Integer.parseInt(str);
+				input.add(num);
+			}
+			catch(NumberFormatException e)
+			{
+				System.out.println("Given input is not a number.");
+			}
 		}
-		System.out.println("Output : " + Arrays.toString(input));
+		System.out.println("Output : " + input);
+		scanner.close();
 	}
 }

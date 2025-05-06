@@ -6,31 +6,24 @@ o/p : {5,8,4,3}
 
 package javaProgramPractice.arrayMethods;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class SingleOccuranceElementInArray {
 
-    public static void printSingleOccurenceElements(int[] arr){
-        Map<Integer, Integer> freqMap = new LinkedHashMap<>();
-
-        for(int n : arr){
-            freqMap.put(n, freqMap.getOrDefault(n,0)+1);
+    public static void printSingleOccurenceElements(int[] input){
+        Map<Integer, Integer> map = new LinkedHashMap<>();
+        List<Integer> output = new LinkedList<>();
+        for(int n : input){
+            map.put(n,map.getOrDefault(n,0)+1);
         }
 
-        System.out.print("{");
-        boolean first = true;
-        for (Map.Entry<Integer,Integer> entry : freqMap.entrySet()){
+        for (Map.Entry<Integer,Integer> entry : map.entrySet()){
             if(entry.getValue() == 1){
-                if(!first){
-                    System.out.print(", ");
-                }
-                System.out.print(entry.getKey());
-                first = false;
+                output.add(entry.getKey());
             }
         }
-        System.out.println("}");
+        System.out.println("Input : " + Arrays.toString(input));
+        System.out.println("Output : " + output);
     }
 
     public static void main(String[] args) {
