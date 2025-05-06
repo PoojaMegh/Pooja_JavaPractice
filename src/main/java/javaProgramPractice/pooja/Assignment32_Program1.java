@@ -9,6 +9,8 @@ Output : {"Techno", "Credits", "TechnoCredits","Hi"}
 package javaProgramPractice.pooja;
 
 import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Assignment32_Program1 {
 		
@@ -56,6 +58,30 @@ public class Assignment32_Program1 {
 		return output;
 	}
 
+
+
+	// Method for int array
+	public  int[] getUniqueIntArray(int[] input) {
+		Set<Integer> uniqueSet = new LinkedHashSet<>();
+		for (int num : input) {
+			uniqueSet.add(num);
+		}
+
+		// Convert Set<Integer> to int[]
+		int[] result = new int[uniqueSet.size()];
+		int i = 0;
+		for (int num : uniqueSet) {
+			result[i++] = num;
+		}
+		return result;
+	}
+
+	// Method for String array
+	public String[] getUniqueStringArray(String[] input) {
+		Set<String> uniqueSet = new LinkedHashSet<>(Arrays.asList(input));
+		return uniqueSet.toArray(new String[0]);
+	}
+
 	public static void main(String[] args) {
 		Assignment32_Program1 assignment32 = new Assignment32_Program1();
 		int[] input = {19,8,0,8,60,56,97,0,97,33,19,60,0};
@@ -64,5 +90,15 @@ public class Assignment32_Program1 {
 		String[] input1 = {"Techno", "Credits", "Techno", "TechnoCredits", "Hi", "Credits", "TechnoCredits"};
 		System.out.println("Array : " + Arrays.toString(input1));
 		System.out.println("Unique Array : " + Arrays.toString(assignment32.getUniqueElementArrayString(input1)));
+
+		// Test int array
+		int[] intInput = {19, 8, 0, 8, 60, 56, 97, 0, 97, 33, 19, 60, 0};
+		int[] uniqueInts = new Assignment32_Program1().getUniqueIntArray(intInput);
+		System.out.println("Unique Integers: " + Arrays.toString(uniqueInts));
+
+		// Test String array
+		String[] strInput = {"Techno", "Credits", "Techno", "TechnoCredits", "Hi", "Credits", "TechnoCredits"};
+		String[] uniqueStrings = new Assignment32_Program1().getUniqueStringArray(strInput);
+		System.out.println("Unique Strings: " + Arrays.toString(uniqueStrings));
 	}
 }
